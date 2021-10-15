@@ -1,7 +1,7 @@
 // Copy this code in browser console change data, and hit enter
 // in clipboard you will have URL
 (() => {
-    const url = `https://certificate-covid-gov-md.github.io/verifym.php/index.html`
+    const url = `https://certificate-covid-gov-md.github.io/verifym.html`
     const hash = btoa(encodeURIComponent(new URLSearchParams({
         nume: 'John',
         prenume: 'Smith',
