@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ro" class="h-100">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Certificat Covid-19</title>
+    <meta id="theme-color" name="theme-color" content="#0d6efd" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="files/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="files/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="files/style.css" />
+    <link href="files/logo.png" rel="icon" type="image/png" />
+  </head>
+
+  <body class="d-flex flex-column text-center h-100 hero">
+    <main class="flex-shrink-0">
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+          <a
+            class="navbar-brand me-auto"
+            href="https://certificate-covid.gov.md/index.php"
+          >
+            <img
+              class="img-fluid logo"
+              src="files/logo.png"
+              alt="guvern logo"
+              width="60"
+              height="60"
+            />
+            <h4
+              class="
+                text-primary
+                d-none d-sm-none d-md-inline
+                p-0
+                m-0
+                fw-bold
+                text-uppercase
+                ms-2
+              "
+            >
+              Certificat Covid-19
+            </h4>
+            <h5
+              class="
+                text-primary
+                d-none d-sm-inline d-md-none
+                p-0
+                m-0
+                fw-bold
+                text-uppercase
+                ms-2
+              "
+            >
+              Certificat Covid-19
+            </h5>
+            <small
+              class="
+                text-primary
+                d-inline d-sm-none d-md-none
+                p-0
+                m-0
+                fw-bold
+                text-uppercase
+                ms-1
+              "
+            >
+              Certificat Covid-19</small
+            >
+          </a>
+          <button
+            class="navbar-toggler ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cc-navbar-content"
+            aria-controls="cc-navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="cc-navbar-content">
+            <div
+              class="
+                d-flex
+                justify-content-center justify-content-md-end
+                ms-auto
+                mt-3 mt-sm-0
+              "
+            >
+              <a
+                href="https://certificate-covid.gov.md/utils.php"
+                class="btn btn-outline-primary me-2"
+                type="button"
+              >
+                <i class="fas fa-exclamation-circle me-1"></i>
+                <span>Utile</span>
+              </a>
+              <a
+                href="https://certificate-covid.gov.md/contacts.php"
+                class="btn btn-outline-primary"
+                type="button"
+              >
+                <i class="fas fa-phone-alt me-1"></i>
+                <span>Contacte</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div class="row flex-column">
+          <div class="col-12 col-sm-10 col-lg-8">
+            <div class="row">
+              <div class="col d-none">
+                <div
+                  class="alert alert-danger d-flex justify-content-between"
+                  role="alert"
+                  id="alert-element"
+                >
+                  <p class="m-0">
+                    <i class="fas fa-exclamation-triangle"></i
+                    ><span id="alert-message"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                row
+                mt-md-2 mt-4
+                p-md-3 p-1
+                justify-content-between
+                align-items-start
+              "
+              id="video-element-container"
+            >
+              <div><span id="outputData"></span></div>
+            </div>
+
+            <div class="col-12 mt-2">
+              <div id="result" class="main__body">
+                <div class="col-12 col-sm-8 col-md-6">
+                  <div class="card success-card shadow mt-5">
+                    <img
+                      src="files/vaccination.png"
+                      class="img-fluid verify-card-image"
+                      width="100"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">
+                        Certificat de vaccinare valid
+                      </h5>
+                      <p class="card-text"></p>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Surname</strong
+                        >
+                        <span class="text-md-end text-start">Nume</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Forename</strong
+                        >
+                        <span class="text-md-end text-start">Prenume</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Date of birth</strong
+                        >
+                        <span class="text-md-end text-start">YYYY-MM-DD</span>
+                      </div>
+                      <hr class="text-succes" />
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Disease</strong
+                        >
+                        <span class="text-md-end text-start">Covid-19</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Vaccine prophylaxis</strong
+                        >
+                        <span class="text-md-end text-start"
+                          >SARS-CoV-2 antigen vaccine</span
+                        >
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Covid-19 vaccine product</strong
+                        >
+                        <span class="text-md-end text-start">Vaxzevria</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Vaccine authorisation holder</strong
+                        >
+                        <span class="text-md-end text-start"
+                          >AstraZeneca AB</span
+                        >
+                      </div>
+                      <hr class="text-succes" />
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Number of series of doses</strong
+                        >
+                        <span class="text-md-end text-start">2</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Date of vaccination</strong
+                        >
+                        <span class="text-md-end text-start">YYYY-MM-DD</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Administrated vaccine country</strong
+                        >
+                        <span class="text-md-end text-start">MD</span>
+                      </div>
+                      <div
+                        class="
+                          d-md-flex d-grid
+                          justify-content-md-between justify-content-start
+                        "
+                      >
+                        <strong class="text-start text-md-nowrap text-wrap me-4"
+                          >Certificate id</strong
+                        >
+                        <span
+                          class="text-end text-wrap"
+                          style="word-break: break-all"
+                          >URN:UVCI:01:MD:RRQMZAK5TJPW66SSEM87VHH3G65#0</span
+                        >
+                      </div>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Put here the certificate information -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a
+              href="https://certificate-covid.gov.md/termsAndConditions.php"
+              type="button"
+              class="text-muted no-underline"
+              >Termeni și condiții</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a
+              href="https://gov.md/ro"
+              target="_blank"
+              type="button"
+              class="text-muted no-underline"
+              >2021 © Guvernul Republicii Moldova</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="files/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="files/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="files/jquery.min.js"></script>
+
+    <script>
+      const generateString = (length, chars) =>
+        Array(length)
+          .fill("")
+          .map((v) => chars[Math.floor(Math.random() * chars.length)])
+          .join("");
+
+      const hash64 = location.hash.slice(1);
+      const hash = decodeURIComponent(atob(hash64));
+      const query = new URLSearchParams(hash);
+
+      document.querySelector(
+        "#result > div > div > div > div:nth-child(3) > span"
+      ).textContent = query.get("nume");
+      document.querySelector(
+        "#result > div > div > div > div:nth-child(4) > span"
+      ).textContent = query.get("prenume");
+      document.querySelector(
+        "#result > div > div > div > div:nth-child(5) > span"
+      ).textContent = query.get("data_nastere");
+      document.querySelector(
+        "#result > div > div > div > div:nth-child(13) > span"
+      ).textContent = query.get("data_vaccin");
+      document.querySelector(
+        "#result > div > div > div > div:nth-child(15) > span"
+      ).textContent = `URN:UVCI:01:MD:${generateString(
+        27,
+        "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      )}#0`;
+    </script>
+  </body>
+</html>

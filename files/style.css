@@ -1,0 +1,178 @@
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-page-action:hover {
+    transform: translateX(20px);
+    transition: all 0.3s;
+}
+
+.home-page-action:not(:hover) {
+    transition: all 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    font-weight: bold;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.hero {
+    background-image: url(../assets/hero.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 32px;
+}
+
+#canvas {
+    width: 75%;
+    height: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+    .hero {
+        background-image: none;
+        background-repeat: repeat-x;
+        background-size: 80% 100%;
+        background-position-x: right;
+        background-position-y: 32px;
+    }
+    #canvas {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .logo {
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+    }
+    .hero {
+        background-size: 50vw 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .logo {
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+    }
+    .hero {
+        background-size: 60vw 110vw;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .hero {
+        background-size: 45vw 75vw;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1980px) {
+    .hero {
+        background-size: 30vw 45vw;
+    }
+}
+
+@media only screen and (min-width: 1981px) {
+    .hero {
+        background-size: 30vw 50vw;
+    }
+}
+
+
+/* Validation JS Css */
+
+.error {
+    color: rgb(238, 76, 76);
+}
+
+.form-control.error {
+    border: 1px solid #ff0000 !important;
+    background: #f2c4c4 !important;
+    color: black;
+}
+
+.certcov__success {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.certcov__error {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.certcov__personal {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.certcov__personal>.personal__data {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+
+/* Verificatio result cards */
+
+.success-card {
+    position: relative;
+    padding: 10px;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.error-card {
+    position: relative;
+    padding: 10px;
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.success-card>.card-body {
+    margin-left: 40px;
+}
+
+.verify-card-image {
+    position: absolute;
+    left: -35px;
+    top: -25px;
+}
